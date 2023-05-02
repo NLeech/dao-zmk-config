@@ -1,0 +1,15 @@
+/ {
+    macros {
+        zez: zez {
+            label = "Zez";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Y >
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp T &kp G &kp H &kp J &kp C &kp N &kp J &kp K &kp J &kp C &kp M &kp 2 &kp 3 &kp 2 &kp 7>
+                ;
+        };
+    };
+};
